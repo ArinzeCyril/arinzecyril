@@ -2,11 +2,14 @@ services:
   - type: web
     name: arinzecyril-portfolio
     env: node
+    plan: free
     buildCommand: npm run build
     startCommand: npm start
     envVars:
-      - key: NODE_VERSION
-        value: 16
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
       - key: CONTACT_EMAIL
         sync: false
       - key: EMAIL_SERVICE

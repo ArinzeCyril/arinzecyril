@@ -71,6 +71,10 @@ This portfolio can be deployed to various platforms:
 5. The build command is automatically set to `npm run build`
 6. The start command is automatically set to `npm start`
 
+### React Version Compatibility
+
+This project uses React 18.3.1 and React DOM 18.3.1 for optimal compatibility with Next.js 14. Using React 19 may cause compatibility issues in some deployment environments.
+
 ## Let's Build Something Amazing
 
 Have a project in mind or want to learn more about my services? Feel free to reach out through the contact form on my website or email me directly. I'm excited to collaborate and bring your ideas to life!
