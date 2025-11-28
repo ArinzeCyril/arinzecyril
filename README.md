@@ -43,7 +43,7 @@ I believe in building fast, efficient applications. I optimize code, implement c
 
 I'm always interested in discussing new projects, creative ideas, or opportunities to be part of your vision.
 
-📧 Email: [arinzecyril123@gmail.com](mailto:arinzecyril123@gmail.com)
+📧 Email: [Dev.ArinzeCyril@gmail.com](mailto:Dev.ArinzeCyril@gmail.com)
 
 ## Projects
 
