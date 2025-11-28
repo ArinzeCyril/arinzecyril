@@ -16,20 +16,6 @@ const DiscoverHow = () => {
       <div className="relative z-10">
         <Navigation />
 
-        {/* Back arrow icon at top left */}
-        <div className="px-4 py-4 sm:px-6 sm:py-6">
-          <Link 
-            to="/" 
-            className="inline-flex items-center gap-3 text-gray-300 hover:text-white transition-colors"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="sm:w-6 sm:h-6">
-              <line x1="20" y1="12" x2="4" y2="12"></line>
-              <polyline points="11 5 4 12 11 19"></polyline>
-            </svg>
-            <span className="text-sm sm:text-base">Back</span>
-          </Link>
-        </div>
-
         <section className="relative z-10 px-4 sm:px-6 py-2">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8 sm:mb-12">
