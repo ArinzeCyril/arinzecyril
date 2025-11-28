@@ -1,111 +1,149 @@
 # Project Summary
 
+This document provides an overview of the portfolio website's components, structure, and functionality.
+
 ## Overview
 
-This portfolio website showcases modern web development techniques using a cutting-edge tech stack. It demonstrates proficiency in both frontend and backend development with a focus on performance, responsiveness, and user experience.
-
-## Architecture
-
-The application follows a client-server architecture with:
-
-1. **Frontend**: React application bundled with Vite
-2. **Backend**: Express.js server for serving static assets
-3. **Build System**: Vite for fast development and optimized production builds
-4. **Styling**: Tailwind CSS with custom configurations
+This is a modern, responsive portfolio website built with Next.js and Tailwind CSS. It showcases the developer's skills, projects, and provides a contact form for potential clients or employers to get in touch.
 
 ## Key Components
 
-### Frontend Components
-
-#### Navigation (`src/components/Navigation.jsx`)
-- Responsive header with logo and navigation links
-- Mobile-friendly hamburger menu implementation
-- Smooth scrolling to page sections
-
-#### Hero Section (`src/components/HeroSection.jsx`)
-- Eye-catching headline with gradient text effect
-- Subheading with key value propositions
-- Primary and secondary call-to-action buttons
-- Floating animated background elements
-
-#### Services Section (`src/components/ServicesSection.jsx`)
-- Grid layout showcasing core services
-- Iconography for visual representation
-- Detailed service descriptions
-
-#### Benefits Section (`src/components/BenefitsSection.jsx`)
-- Checklist format highlighting key benefits
-- Visual indicators for each benefit item
-- Clean typography and spacing
-
-#### Process Section (`src/components/ProcessSection.jsx`)
-- Step-by-step workflow visualization
-- Numbered process indicators
-- Clear explanations of each stage
-
-#### CTA Section (`src/components/CTASection.jsx`)
-- Strong call-to-action with gradient button
-- Compelling final messaging
-- Contact information integration
-
-#### Footer (`src/components/Footer.jsx`)
-- Copyright information
-- Social media placeholders
-- Additional navigation links
-
 ### Pages
 
-#### Main Page (`src/App.jsx`)
-- Composition of all major components
-- Background element implementation
-- Z-index layering for depth effects
+1. **Home Page** (`pages/index.js`)
+   - Hero section with call-to-action buttons
+   - Services section highlighting key skills
+   - Portfolio section showcasing projects
+   - Testimonials section
+   - Call-to-action section
+   - Footer with contact information
 
-#### Discover How Page (`src/pages/DiscoverHow.jsx`)
-- Extended content page demonstrating routing
-- Back navigation capability
-- Consistent styling with main page
+2. **Contact Page** (`pages/contact.js`)
+   - Contact form with name, email, and message fields
+   - Option to specify contact preference
+   - Form validation and submission handling
+   - Success and error messaging
 
-### Routing
+3. **Discover How Page** (`pages/discover-how.js`)
+   - Information about the development process
+   - Details about services offered
+   - Call-to-action section
 
-The application uses React Router for client-side navigation:
-- `/` - Main portfolio page
-- `/discover-how` - Additional content page
+### Components
 
-### Styling
+1. **Navigation** (`components/Navigation.jsx`)
+   - Responsive navigation bar
+   - Mobile-friendly hamburger menu
+   - "Let's Talk" call-to-action button
 
-Custom styling features include:
-- Glassmorphism effects with backdrop blur
-- Animated floating orbs in the background
-- Gradient color schemes
-- Responsive design for all device sizes
-- Smooth transitions and hover effects
+2. **Hero Section** (`components/HeroSection.jsx`)
+   - Main headline with gradient text effect
+   - Subtitle with value proposition
+   - Primary and secondary call-to-action buttons
 
-### Backend Server
+3. **Services Section** (`components/ServicesSection.jsx`)
+   - Grid of services with icons
+   - Descriptions of key offerings
+   - Visual design with glassmorphism effects
 
-The Express.js server (`server.js`) handles:
-- Static file serving from the `dist/` directory
-- SPA routing fallback for client-side navigation
-- Environment-based port configuration
+4. **Portfolio Section** (`components/PortfolioSection.jsx`)
+   - Project showcase with images
+   - Project descriptions and technologies used
+   - Links to live demos or repositories
 
-## Performance Optimizations
+5. **Testimonials Section** (`components/TestimonialsSection.jsx`)
+   - Client testimonials with star ratings
+   - Carousel functionality for multiple testimonials
 
-1. **Vite Build System**: Ultra-fast development server and optimized production builds
-2. **Code Splitting**: Route-based code splitting for faster initial loads
-3. **Asset Optimization**: Minified CSS and JavaScript bundles
-4. **Lazy Loading**: Efficient component loading strategies
+6. **CTA Section** (`components/CTASection.jsx`)
+   - Strong call-to-action with gradient background
+   - Contact button linking to contact page
+
+7. **Footer** (`components/Footer.jsx`)
+   - Contact information
+   - Social media links
+   - Copyright information
+
+### API Routes
+
+1. **Contact Form Handler** (`pages/api/contact.js`)
+   - Receives form submissions from the contact page
+   - Validates form data
+   - Sends emails using Nodemailer
+   - Returns success or error responses
+
+### Configuration
+
+1. **Email Configuration** (`config/emailConfig.js`)
+   - Centralized email settings
+   - Environment variable integration
+   - Support for multiple email providers
+
+## Styling
+
+The website uses Tailwind CSS for styling with the following key features:
+
+1. **Responsive Design**: Mobile-first approach with breakpoints for all device sizes
+2. **Glassmorphism**: Frosted glass effects for modern UI elements
+3. **Gradient Effects**: Color gradients for visual interest
+4. **Dark Theme**: Dark background with light text for modern aesthetic
+5. **Animations**: Subtle animations and transitions for enhanced user experience
+
+## Functionality
+
+### Contact Form
+
+The contact form allows visitors to send messages directly from the website:
+
+1. **Form Fields**:
+   - Name (required)
+   - Email (required)
+   - Contact preference (can contact at provided email or alternative)
+   - Message (required)
+
+2. **Validation**:
+   - Client-side validation for immediate feedback
+   - Server-side validation for security
+   - Email format validation
+
+3. **Submission Process**:
+   - Form data sent to API route via fetch
+   - Loading state during submission
+   - Success or error message display
+
+4. **Email Handling**:
+   - Server-side email sending with Nodemailer
+   - Support for multiple email providers
+   - Environment variable configuration
+
+### Navigation
+
+The navigation provides easy access to all sections of the website:
+
+1. **Desktop Navigation**:
+   - Horizontal layout with logo and CTA button
+   - Direct links to key sections
+
+2. **Mobile Navigation**:
+   - Hamburger menu for small screens
+   - Collapsible menu with all navigation items
+   - Smooth animations for menu toggle
 
 ## Deployment
 
-The application can be deployed to various platforms:
-- Traditional Node.js hosting (Heroku, DigitalOcean)
-- Static site hosts (Netlify, Vercel) with redirect configurations
-- Custom server environments
+The website can be deployed to various platforms:
+
+1. **Render**: Configured with render.yaml
+2. **Vercel**: Native Next.js support
+3. **Netlify**: Support for static site deployment
+
+Environment variables are used for configuration across all platforms.
 
 ## Future Enhancements
 
-Planned improvements include:
-- Integration with headless CMS for content management
-- Dark/light theme toggle
-- Animation enhancements with Framer Motion
-- Contact form with email service integration
-- Portfolio project showcase with filtering capabilities
+1. **Blog Section**: Add a blog to showcase technical writing
+2. **Project Details Pages**: Individual pages for each project with more details
+3. **Dark/Light Mode Toggle**: Allow users to switch between color schemes
+4. **Internationalization**: Support for multiple languages
+5. **Performance Monitoring**: Integration with performance monitoring tools
+6. **SEO Improvements**: Enhanced metadata and structured data

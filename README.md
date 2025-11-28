@@ -35,20 +35,41 @@ I believe in building fast, efficient applications. I optimize code, implement c
 ### Tools & Platforms
 - Git & GitHub
 - Vercel & Netlify Deployment
+- Render Deployment
 - VS Code
 - Chrome DevTools
-
 
 ## Get In Touch
 
 I'm always interested in discussing new projects, creative ideas, or opportunities to be part of your vision.
 
-📧 Email: [Dev.ArinzeCyril@gmail.com](mailto:Dev.ArinzeCyril@gmail.com)
+📧 Email: [arinzecyril123@gmail.com](mailto:arinzecyril123@gmail.com)
 
 ## Projects
 
 ### Portfolio Website
 A modern, responsive portfolio showcasing my skills and work. Built with Next.js, React, and Tailwind CSS.
+
+## Deployment
+
+This portfolio can be deployed to various platforms:
+
+### Deploy to Render
+
+1. Fork this repository
+2. Create a new Web Service on Render
+3. Connect your forked repository
+4. Configure the following environment variables in Render dashboard:
+   - `CONTACT_EMAIL` - Your contact email address
+   - `EMAIL_SERVICE` - Email service (e.g., gmail, hotmail)
+   - `EMAIL_HOST` - SMTP host (e.g., smtp.gmail.com)
+   - `EMAIL_PORT` - SMTP port (e.g., 587)
+   - `EMAIL_SECURE` - SSL/TLS setting (true/false)
+   - `EMAIL_USER` - Your email address
+   - `EMAIL_PASS` - Your email password or app password
+
+5. The build command is automatically set to `npm run build`
+6. The start command is automatically set to `npm start`
 
 ## Let's Build Something Amazing
 
