@@ -56,20 +56,7 @@ This portfolio can be deployed to various platforms:
 
 ### Deploy to Render
 
-1. Fork this repository
-2. Create a new Web Service on Render
-3. Connect your forked repository
-4. Configure the following environment variables in Render dashboard:
-   - `CONTACT_EMAIL` - Your contact email address
-   - `EMAIL_SERVICE` - Email service (e.g., gmail, hotmail)
-   - `EMAIL_HOST` - SMTP host (e.g., smtp.gmail.com)
-   - `EMAIL_PORT` - SMTP port (e.g., 587)
-   - `EMAIL_SECURE` - SSL/TLS setting (true/false)
-   - `EMAIL_USER` - Your email address
-   - `EMAIL_PASS` - Your email password or app password
-
-5. The build command is automatically set to `npm run build`
-6. The start command is automatically set to `npm start`
+See [README.Render.md](README.Render.md) for detailed Render deployment instructions.
 
 ### React Version Compatibility
 
