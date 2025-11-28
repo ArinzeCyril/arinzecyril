@@ -18,6 +18,40 @@
   --color-slate-900: #0f172a;
 }
 
+/* Custom styles for small displays (150px to 200px) */
+@media (min-width: 150px) and (max-width: 200px) {
+  .xs\:text-2xl { font-size: 1rem; } /* 16px instead of 1.5rem (24px) */
+  .xs\:text-3xl { font-size: 1.125rem; } /* 18px instead of 1.875rem (30px) */
+  .xs\:text-4xl { font-size: 1.25rem; } /* 20px instead of 2.25rem (36px) */
+  .xs\:text-5xl { font-size: 1.5rem; } /* 24px instead of 3rem (48px) */
+  .xs\:text-6xl { font-size: 1.75rem; } /* 28px instead of 3.75rem (60px) */
+  .xs\:text-lg { font-size: 0.875rem; } /* 14px instead of 1.125rem (18px) */
+  .xs\:text-xl { font-size: 1rem; } /* 16px instead of 1.25rem (20px) */
+  .xs\:text-2xl { font-size: 1.125rem; } /* 18px instead of 1.5rem (24px) */
+  .xs\:text-base { font-size: 0.875rem; } /* 14px instead of 1rem (16px) */
+  
+  /* Reduce padding and margins by half */
+  .xs\:p-6 { padding: 1.5rem; } /* 24px instead of 3rem (48px) */
+  .xs\:p-8 { padding: 2rem; } /* 32px instead of 4rem (64px) */
+  .xs\:p-12 { padding: 3rem; } /* 48px instead of 6rem (96px) */
+  .xs\:px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+  .xs\:py-6 { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+  .xs\:px-8 { padding-left: 2rem; padding-right: 2rem; }
+  .xs\:py-8 { padding-top: 2rem; padding-bottom: 2rem; }
+  .xs\:mb-6 { margin-bottom: 1.5rem; } /* 24px instead of 3rem (48px) */
+  .xs\:mb-8 { margin-bottom: 2rem; } /* 32px instead of 4rem (64px) */
+  .xs\:mb-12 { margin-bottom: 3rem; } /* 48px instead of 6rem (96px) */
+  .xs\:gap-6 { gap: 1.5rem; } /* 24px instead of 3rem (48px) */
+  .xs\:gap-8 { gap: 2rem; } /* 32px instead of 4rem (64px) */
+  .xs\:gap-12 { gap: 3rem; } /* 48px instead of 6rem (96px) */
+  
+  /* Smaller icons */
+  .xs\:w-8 { width: 1.5rem; } /* 24px instead of 2rem (32px) */
+  .xs\:h-8 { height: 1.5rem; } /* 24px instead of 2rem (32px) */
+  .xs\:w-12 { width: 2rem; } /* 32px instead of 3rem (48px) */
+  .xs\:h-12 { height: 2rem; } /* 32px instead of 3rem (48px) */
+}
+
 html {
   scroll-behavior: smooth;
 }
