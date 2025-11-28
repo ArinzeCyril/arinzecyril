@@ -1,5 +1,155 @@
 # Arinze Cyril - Portfolio Website
 
+A modern, responsive portfolio website built with Next.js and Tailwind CSS.
+
+## Features
+
+- Responsive design that works on all devices
+- Fast loading times with Next.js optimizations
+- Modern UI with glassmorphism effects
+- Contact form with email handling
+- Single Page Application (SPA) navigation
+
+## Technology Stack
+
+- Next.js 14+
+- React 18+
+- Tailwind CSS
+- Nodemailer for email handling
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (version 16 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ArinzeCyril/arinzecyril.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd arinzecyril
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+4. Configure email settings:
+   Create a `.env.local` file in the root directory with your email configuration:
+
+### Email Configuration Options
+
+#### Gmail (with 2-Step Verification - Recommended)
+```
+CONTACT_EMAIL=your-contact-email@gmail.com
+EMAIL_SERVICE=gmail
+EMAIL_HOST=smtp.gmail.com
+EMAIL_PORT=587
+EMAIL_SECURE=false
+EMAIL_USER=your-email@gmail.com
+EMAIL_PASS=your-16-character-app-password
+```
+
+#### Outlook/Hotmail
+```
+CONTACT_EMAIL=your-contact-email@hotmail.com
+EMAIL_SERVICE=hotmail
+EMAIL_HOST=smtp-mail.outlook.com
+EMAIL_PORT=587
+EMAIL_SECURE=false
+EMAIL_USER=your-email@hotmail.com
+EMAIL_PASS=your-password
+```
+
+#### Yahoo Mail
+```
+CONTACT_EMAIL=your-contact-email@yahoo.com
+EMAIL_SERVICE=yahoo
+EMAIL_HOST=smtp.mail.yahoo.com
+EMAIL_PORT=587
+EMAIL_SECURE=true
+EMAIL_USER=your-email@yahoo.com
+EMAIL_PASS=your-password
+```
+
+#### Other SMTP Providers
+```
+CONTACT_EMAIL=your-contact-email@yourdomain.com
+EMAIL_SERVICE=
+EMAIL_HOST=your-smtp-host.com
+EMAIL_PORT=587
+EMAIL_SECURE=false
+EMAIL_USER=your-smtp-username
+EMAIL_PASS=your-smtp-password
+```
+
+### Development
+
+To start the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Production
+
+To build for production:
+
+```bash
+npm run build
+# or
+yarn build
+```
+
+To start the production server:
+
+```bash
+npm start
+# or
+yarn start
+```
+
+## Deployment
+
+This application can be deployed to various platforms including:
+
+- Vercel (recommended)
+- Netlify
+- Heroku
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any inquiries, please reach out to [arinzecyril123@gmail.com](mailto:arinzecyril123@gmail.com).
+
+
+
+
+
+
+
+
+
+
+<!-- React -->
+# Arinze Cyril - Portfolio Website
+
 A modern, responsive portfolio website built with React and Tailwind CSS, featuring a beautiful glassmorphism design.
 
 ## 🚀 Quick Start
