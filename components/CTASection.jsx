@@ -1,8 +1,8 @@
-import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import React from 'react'
+import { useRouter } from 'next/router'
 
 const CTASection = () => {
-  const navigate = useNavigate();
+  const router = useRouter();
 
   return (
     <section className="relative z-10 px-4 sm:px-6 py-12 sm:py-20">
@@ -21,8 +21,8 @@ const CTASection = () => {
           </p>
           <div className="flex justify-center">
             <div className="relative">
-              <button 
-                onClick={() => navigate('/contact')}
+              <button
+                onClick={() => router.push('/contact')}
                 className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-full hover:from-purple-700 hover:to-blue-700 transition-all duration-300 inline-flex items-center gap-2 sm:gap-3 shadow-xl text-sm sm:text-base whitespace-nowrap"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="sm:w-5 sm:h-5">
@@ -31,7 +31,6 @@ const CTASection = () => {
                 </svg>
                 Get In Touch
               </button>
-              
             </div>
           </div>
         </div>

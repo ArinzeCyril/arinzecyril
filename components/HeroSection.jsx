@@ -1,26 +1,12 @@
-import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import React from 'react'
+import { useRouter } from 'next/router'
 
 const HeroSection = () => {
-  const navigate = useNavigate();
-  const [showForm, setShowForm] = useState(false);
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    contactEmail: '',
-    canContactAtProvidedEmail: 'yes',
-    message: 'I\'m interested in discussing a project.'
-  });
-  const [errors, setErrors] = useState({});
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitSuccess, setSubmitSuccess] = useState(false);
-  const [submitError, setSubmitError] = useState('');
+  const router = useRouter();
 
   const handleDiscoverHow = () => {
-    navigate('/discover-how');
+    router.push('/discover-how');
   };
-
- 
 
   return (
     <section className="relative z-10 px-4 sm:px-6 py-16 sm:py-20">
@@ -34,7 +20,7 @@ const HeroSection = () => {
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center px-4">
           <div className="relative">
             <button 
-              onClick={() => navigate('/contact')}
+              onClick={() => router.push('/contact')}
               className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full hover:from-purple-700 hover:to-blue-700 transition-all duration-300 flex items-center justify-center gap-2 sm:gap-3 shadow-2xl text-sm sm:text-base whitespace-nowrap"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" className="sm:w-5 sm:h-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -49,6 +35,11 @@ const HeroSection = () => {
             onClick={handleDiscoverHow}
             className="border border-white/30 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full hover:bg-white/10 transition-all duration-300 text-sm sm:text-base whitespace-nowrap flex items-center justify-center gap-2 sm:gap-3"
           >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" className="sm:w-5 sm:h-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M12 16v-4"></path>
+              <path d="M12 8h.01"></path>
+            </svg>
             Discover How
           </button>
         </div>

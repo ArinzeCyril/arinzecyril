@@ -1,71 +1,98 @@
-# Arinze Cyril 👨‍💻
+# Arinze Cyril - Portfolio Website
 
-[![GitHub](https://img.shields.io/github/followers/arinzecyril?label=Follow&style=social)](https://github.com/arinzecyril)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](#)
-[![Email](https://img.shields.io/badge/Email-Contact-red)](mailto:arinzecyril123@gmail.com)
+A modern, responsive portfolio website built with Next.js and Tailwind CSS.
 
-Full-Stack Developer passionate about creating modern web applications with cutting-edge technologies. Specializing in React, Node.js, and cloud solutions.
+## Features
 
-## 🚀 About Me
-
-I'm a dedicated full-stack developer focused on building responsive, performant web applications with exceptional user experiences. With expertise in modern JavaScript frameworks and cloud technologies, I bring ideas to life through clean, efficient code.
-
-## 💼 Technical Skills
-
-### Frontend Development
-- **Languages & Frameworks**: React, HTML5, CSS3, JavaScript (ES6+), TypeScript
-- **Styling**: Tailwind CSS, Responsive Design, CSS Modules
-- **Tools & Libraries**: Vite, React Router, Lucide Icons
-
-### Backend Development
-- **Technologies**: Node.js, Express.js
-- **Databases**: MongoDB, PostgreSQL, Firebase
-- **APIs**: RESTful APIs, GraphQL
-
-### DevOps & Tools
-- **Version Control**: Git, GitHub
-- **Deployment**: Netlify, Vercel, Heroku
-- **Package Managers**: npm, yarn
-- **Development Tools**: VS Code, Postman
-
-## 🛠️ Projects
-
-### Portfolio Website ([Repository](https://github.com/ArinzeCyril/page))
-A modern, responsive portfolio website built with React and Tailwind CSS featuring a beautiful glassmorphism design.
-
-**Key Features:**
 - Responsive design that works on all devices
-- Modern UI with glassmorphism effects and smooth animations
-- Interactive elements with hover effects and transitions
-- Fast loading optimized with Vite build system
-- Single Page Application with React Router
+- Fast loading times with Next.js optimizations
+- Modern UI with glassmorphism effects
+- Contact form with email handling
+- Single Page Application (SPA) navigation
 
-**Tech Stack:** React, Vite, Tailwind CSS, Express.js
+## Technology Stack
 
-### More Projects Coming Soon...
-I'm constantly working on new projects and improving my existing ones. Check back soon for more exciting developments!
+- Next.js 14+
+- React 18+
+- Tailwind CSS
+- Nodemailer for email handling
 
-## 📈 GitHub Stats
+## Getting Started
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=arinzecyril&show_icons=true&theme=radical)
+### Prerequisites
 
-## 🌱 Currently Learning
+- Node.js (version 16 or higher)
+- npm or yarn
 
-- Advanced React patterns and state management
-- Node.js microservices architecture
-- Cloud technologies (AWS/Azure)
-- Containerization with Docker
+### Installation
 
-## 📫 Let's Connect
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ArinzeCyril/arinzecyril.git
+   ```
 
-- 💼 [LinkedIn](#) (Coming Soon)
-- 📧 [Email](mailto:arinzecyril123@gmail.com)
-- 🐦 [Twitter](#) (Coming Soon)
+2. Navigate to the project directory:
+   ```bash
+   cd arinzecyril
+   ```
 
-## 📝 Blog & Articles
+3. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-I occasionally write about web development topics. Stay tuned for upcoming articles on modern web technologies!
+4. Configure email settings:
+   Create a `.env.local` file in the root directory with your email configuration:
+   ```
+   CONTACT_EMAIL=your-contact-email@example.com
+   EMAIL_USER=your-email@example.com
+   EMAIL_PASS=your-email-password-or-app-password
+   ```
 
----
+### Development
 
-⭐ From [ArinzeCyril](https://github.com/arinzecyril)
+To start the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Production
+
+To build for production:
+
+```bash
+npm run build
+# or
+yarn build
+```
+
+To start the production server:
+
+```bash
+npm start
+# or
+yarn start
+```
+
+## Deployment
+
+This application can be deployed to various platforms including:
+
+- Vercel (recommended)
+- Netlify
+- Heroku
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any inquiries, please reach out to [arinzecyril123@gmail.com](mailto:arinzecyril123@gmail.com).

@@ -1,13 +1,13 @@
 import React from 'react'
-import Navigation from './components/Navigation'
-import HeroSection from './components/HeroSection'
-import ServicesSection from './components/ServicesSection'
-import BenefitsSection from './components/BenefitsSection'
-import ProcessSection from './components/ProcessSection'
-import CTASection from './components/CTASection'
-import Footer from './components/Footer'
+import Navigation from '../components/Navigation'
+import HeroSection from '../components/HeroSection'
+import ServicesSection from '../components/ServicesSection'
+import BenefitsSection from '../components/BenefitsSection'
+import ProcessSection from '../components/ProcessSection'
+import CTASection from '../components/CTASection'
+import Footer from '../components/Footer'
 
-function App() {
+export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 relative">
       {/* Background Elements */}
@@ -30,5 +30,3 @@ function App() {
     </div>
   )
 }
-
-export default App
