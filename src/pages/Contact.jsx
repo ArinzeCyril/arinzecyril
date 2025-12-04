@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 import { CONTACT_EMAIL } from '../config/emailConfig';
@@ -15,8 +15,20 @@ const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const [submitError, setSubmitError] = useState('');
+  const [shouldRedirect, setShouldRedirect] = useState(false);
   
   const navigate = useNavigate();
+
+  // Handle redirection effect
+  useEffect(() => {
+    if (shouldRedirect) {
+      const timer = setTimeout(() => {
+        navigate('/');
+      }, 5000);
+      
+      return () => clearTimeout(timer);
+    }
+  }, [shouldRedirect, navigate]);
 
   const validateEmail = (email) => {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -94,8 +106,8 @@ const Contact = () => {
     const body = encodeURIComponent(bodyContent);
     const mailtoLink = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
     
-    // Open mail client
-    window.location.href = mailtoLink;
+    // Open mail client using React-specific approach
+    window.open(mailtoLink, '_self');
     
     // Reset form and show success message
     setFormData({ 
@@ -107,12 +119,7 @@ const Contact = () => {
     });
     setIsSubmitting(false);
     setSubmitSuccess(true);
-    
-    // Hide success message and redirect to home page after 5 seconds
-    setTimeout(() => {
-      setSubmitSuccess(false);
-      navigate('/');
-    }, 5000);
+    setShouldRedirect(true);
   };
 
   return (
