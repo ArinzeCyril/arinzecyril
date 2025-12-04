@@ -126,7 +126,7 @@ const DiscoverHow = () => {
                     { name: 'Python', icon: '🐍' },
                     { name: 'MongoDB', icon: '🍃' },
                     { name: 'PostgreSQL', icon: '🐘' },
-                    { name: 'AWS', icon: '☁️' }
+                    { name: 'And More...', icon: '⚡' }
                   ].map((tech, index) => (
                     <div key={index} className="bg-white/5 rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-white/10 hover:border-purple-500/50 transition-all duration-300">
                       <div className="text-2xl sm:text-3xl mb-2">{tech.icon}</div>
