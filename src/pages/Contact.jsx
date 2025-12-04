@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 import { CONTACT_EMAIL } from '../config/emailConfig';
 
@@ -15,6 +15,8 @@ const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const [submitError, setSubmitError] = useState('');
+  
+  const navigate = useNavigate();
 
   const validateEmail = (email) => {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -106,9 +108,10 @@ const Contact = () => {
     setIsSubmitting(false);
     setSubmitSuccess(true);
     
-    // Hide success message after 5 seconds
+    // Hide success message and redirect to home page after 5 seconds
     setTimeout(() => {
       setSubmitSuccess(false);
+      navigate('/');
     }, 5000);
   };
 
@@ -148,12 +151,9 @@ const Contact = () => {
                   <p className="text-gray-300 mb-6">
                     Thank you for reaching out. I'll respond to your message shortly.
                   </p>
-                  <Link 
-                    to="/"
-                    className="inline-block bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 py-3 rounded-full hover:from-purple-700 hover:to-blue-700 transition-all duration-300"
-                  >
-                    Back to Home
-                  </Link>
+                  <p className="text-gray-300">
+                    Redirecting to home page...
+                  </p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit}>
