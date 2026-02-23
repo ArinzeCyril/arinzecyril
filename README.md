@@ -1,67 +1,100 @@
 # Arinze Cyril
 
-Full-Stack Developer & Problem Solver
+Backend-Focused Full-Stack Developer  
+Serverless Architecture | Secure Payment Systems | MongoDB | REST APIs
 
-## About Me
+---
 
-I'm a passionate full-stack developer with expertise in creating modern web applications that deliver exceptional user experiences. My focus is on building scalable, efficient, and visually appealing digital solutions that solve real-world problems.
+## 🚀 About Me
 
-## What I Do
+I design and build production-ready web systems with a strong emphasis on backend architecture, security, and scalability.
 
-### Full-Stack Development
-I specialize in building complete web applications using modern technologies like React, Node.js, and cloud platforms. From frontend interfaces to backend APIs and database design, I handle all aspects of web development.
+My focus is not just building interfaces — but engineering reliable systems:
 
-### Responsive Web Design
-I create websites and applications that look and function beautifully across all devices - from desktops to tablets to mobile phones. My designs adapt seamlessly to provide optimal user experiences.
+- Stateless authentication (JWT)
+- Role-based access control (RBAC)
+- Secure webhook-based payment verification
+- MongoDB indexing strategy for performance
+- Serverless backend architecture
 
-### Performance Optimization
-I believe in building fast, efficient applications. I optimize code, implement caching strategies, and follow best practices to ensure your digital products perform at their best.
+I enjoy thinking in terms of system design, data integrity, and production-grade engineering.
 
-## Technologies & Skills
+---
 
-### Frontend
-- React & Next.js
-- JavaScript & TypeScript
-- HTML5 & CSS3
-- Tailwind CSS
-- Responsive Design
+## 🧠 Core Engineering Strengths
+
+- Designing RESTful APIs
+- Secure authentication & authorization flows
+- Webhook signature validation (HMAC)
+- Payment workflow architecture
+- MongoDB schema modeling & indexing
+- Serverless function design
+- Backend performance optimization
+
+---
+
+## 🔧 Tech Stack
 
 ### Backend
 - Node.js
-- Express.js
-- RESTful API Development
-- Database Design (SQL & NoSQL)
+- Netlify Serverless Functions
+- Express-style API architecture
+- JWT Authentication
+- Paystack Webhook Integration
+- MongoDB Atlas
+- PostgreSQL (working knowledge)
 
-### Tools & Platforms
+### Frontend
+- React (Vite)
+- React Router
+- Tailwind CSS
+- Context API
+
+### Tools
 - Git & GitHub
-- Vercel & Netlify Deployment
+- Netlify Deployment
 - Render Deployment
+- Vercel Deployment
 - VS Code
 - Chrome DevTools
 
-## Get In Touch
+---
 
-I'm always interested in discussing new projects, creative ideas, or opportunities to be part of your vision.
+## 📌 Featured Project
 
-📧 Email: [arinzecyril123@gmail.com](mailto:arinzecyril123@gmail.com)
+### ExploreWithRJ  
+Production-grade serverless consultation platform.
 
-## Projects
+Key highlights:
+- JWT authentication with RBAC
+- Secure Paystack webhook verification (HMAC-SHA512)
+- No client-side payment trust
+- Advanced MongoDB indexing strategy
+- Admin dashboard & role-based backend enforcement
+- Serverless deployment on Netlify
 
-### Portfolio Website
-A modern, responsive portfolio showcasing my skills and work. Built with Next.js, React, and Tailwind CSS.
+Architecture Focus:
+Frontend → Serverless API → MongoDB  
+Paystack → Webhook → Backend Verification → Database Update
 
-## Deployment
+---
 
-This portfolio can be deployed to various platforms:
+## 🎯 Current Focus
 
-### Deploy to Render
+- Frontend development roles (remote)
+- Backend engineering roles (remote)
+- Scalable serverless systems
+- Secure fintech-style payment architectures
+- Database performance & indexing strategies
+- Production-grade system design
 
-See [README.Render.md](README.Render.md) for detailed Render deployment instructions.
+---
 
-### React Version Compatibility
+## 📫 Contact
 
-This project uses React 18.3.1 and React DOM 18.3.1 for optimal compatibility with Next.js 14. Using React 19 may cause compatibility issues in some deployment environments.
+Email: dev.arinzecyril@gmail.com  
+Open to remote frontend, backend, or full-stack opportunities.
 
-## Let's Build Something Amazing
+---
 
-Have a project in mind or want to learn more about my services? Feel free to reach out through the contact form on my website or email me directly. I'm excited to collaborate and bring your ideas to life!
+> I believe backend engineering is about integrity, security, and intentional system design — not just making things work.
